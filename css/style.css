@@ -1,4 +1,5 @@
-
+/* 폰트 불러오기 */
+@import url( '../fonts/font.css');
 
 /* 기본 태그들 리셋 */
 html, body, div, span, applet, object, iframe,
@@ -13,33 +14,60 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+	margin: 0; /* 기본으로 공백 생기기 방지 */
+	padding: 0; /* 마진와 동일 */
+	border: 0; /* 보더는 넣지않으면 적용 X  */
+	outline: 0; /*쓸데없는 꾸밈 X*/
+	font-size: 100%; /* 폰트크기 기본으로 설정 */
+	vertical-align: baseline; /* 수직 정렬 */
 }
 
+/* 라인 길이 설정 <표준은 1.2 임>*/
 body {
   line-height: 1;
 }
 
-/* ol ul 태그 꾸밈 없이 정렬만 가능하도록 설정 */
+/* ol ul 태그 꾸밈 없이 정렬만 가능하도록 설정 margin 도 틀에 맞게 자동으로 설정*/
 ol, ul {
-  margin-left: auto;
 	list-style: none;
+  margin-left: auto;
   margin-right: auto;
 }
 
 /* 어..... 지금부터는 주석 귀찮으니 Pass */
 
+#home {
+    /* 화면에 고정됨*/
+    position: fixed;
+
+    /* 맨 위로 */
+    z-index: 100;
+
+    padding: 5px;
+}
+
+#home ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#home ul .goHome {
+	font-family: 'Black Han Sans';
+  background: #000000;
+	color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
 #menu {
   position: sticky;
   top: 0;
-  justify-content: center;
-  z-index: 50;
+	justify-content: center;
   background-color: #336699;
+	z-index: 50;
 }
 
 #menu ul {
@@ -61,20 +89,28 @@ ol, ul {
 
 #menu .menu_items .items {
   border-left: 1px solid #333333;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-weight: 100;
+	font-size: 20px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 #menu .menu_items li:first-child .items {
   border-left: 0;
 }
 
+#sub_memu {
+	display: none;
+}
+
 #banner {
-  height: 100vh;
+	background-image: url(../img/headImg.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
+	height: 100vh;
 }
 
 #banner a {
@@ -82,13 +118,33 @@ ol, ul {
 }
 
 #banner .title {
+	font-family: 'Gaegu';
+	font-size: 12rem;
   position: relative;
-  padding: 40px;
   color: #FFFFFF;
-  font-size: 5rem;
 }
 
 #body {
+
+}
+
+#body #elment01 {
+
+}
+
+#body #elment02 {
+
+}
+
+#body #elment03 {
+
+}
+
+#body #elment04 {
+
+}
+
+.content {
 
 }
 
@@ -97,23 +153,23 @@ a:-webkit-any-link {
 	text-decoration: none;
 }
 
-#banner .title:selection {
-  color: #36c875;
+@media screen and (max-width: 804px) {
+
+	#menu {
+		display: none;
+	}
+
+	#sub_memu {
+		display: block;
+	}
+
+	#home ul .goHome {
+	  background: #CCFFCC;
+		color: #006600;
+	}
+
+	#banner .title {
+		font-size: 7rem;
+	}
+
 }
-
-/* 반응형은 나중에.... 귀찮.....
-@media (max-width:600px) {
-
-  #grid{
-    display: block;
-  }
-
-  ol {
-    border-right:none;
-  }
-
-  h1 {
-    border: none;
-  }
-}
-*/
