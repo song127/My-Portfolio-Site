@@ -2,28 +2,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="js/jscript.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/twinkleButton.css">
     <link href="fonts/fonts.css" rel="stylesheet">
     <title>Mr.Dean Portfolio Site</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="js/jscript.js"></script>
   </head>
   <body>
 
-    <div id="home">
-            <ul>
-              <li class="goHome" onclick="goHere(this)">Home</li>
-            </ul>
+    <!-- 맨위(홈으로) 가는 버튼 -->
+    <div id="homeBtn">
+      <ul>
+        <li class="goHome" onclick="goHere(0)">Home</li>
+      </ul>
+    </div>
+
+    <!-- 이동 스크롤 메뉴 버튼 -->
+    <div id="subMenuBtn">
+      <ul>
+        <li class="subMenu" onclick="goHere(this)"><<</li>
+      </ul>
     </div>
 
     <!--  상단 고정 메뉴  -->
     <div id="menu">
       <div class="menu_items">
         <ul>
-          <li><a class="items" href="index.html">자기소개</a></li>
-          <li><a class="items" href="index.html">프로젝트</a></li>
-          <li><a class="items" href="index.html">수상 경력</a></li>
-          <li><a class="items" href="index.html">참고 사이트</a></li>
+          <li><a class="items" onclick="goHere(1)">자기소개</a></li>
+          <li><a class="items" onclick="goHere(2)">프로젝트</a></li>
+          <li><a class="items" onclick="goHere(3)">수상 경력</a></li>
+          <li><a class="items" onclick="goHere(4)">참고 사이트</a></li>
         </ul>
       </div>
     </div>
@@ -36,9 +48,30 @@
 
     <!-- 내용  -->
     <div id="body">
-      <ul>
-        <li></li>
-      </ul>
+      <div class="elements">
+        <ul>
+          <li class="element" style="background-image : url(img/smileMonitor.jpg)">
+            <h2>자기소개</h2>
+            <p>
+              안녕하세요 강원대학교 본캠 재학 중인 송승재라고합니다. 나이는 21 살이구요 평범한 프로그램 대학생입니다.
+            </p>
+          </li>
+          <li class="element" style="background-image : url(img/keyboard.jpg)">
+            <h2>프로젝트</h2>
+            <p>행맨 게임 만들기(JAVA)</p>
+            <p>미세먼지 표시 앱 만들기(Android Studio)</p>
+            <p>인스타 그램 따라 만들기 프로젝트(Android Studio)</p>
+          </li>
+          <li class="element" style="background-image: url(img/twinkleSky.png)">
+            <h2>수상 경력</h2>
+            <p></p>
+          </li>
+          <li class="element" style="background-image: url(img/twinkleSky2.jpg)">
+            <h2>참고 사이트</h2>
+            <p></p>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </body>
