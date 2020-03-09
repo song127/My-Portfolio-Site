@@ -68,7 +68,7 @@ ol, ul {
 
 #subMenuBtn .subMenu {
 	float: right;
-	font-family: 'Black Han Sans';
+	font-family: 'Do Hyeon';
 	font-size: 1.5rem;
   background: #000000;
 	color: white;
@@ -83,24 +83,28 @@ ol, ul {
 
 #subMenuBtn li ul{
 	background: black;
-	display:none;
-	height:auto;
+	display: none;
 	margin: 5px;
-	border:0px;
-	position:absolute;
-	width:200px;
-	z-index:200;
+	position: absolute;
+	width: 150px;
+	z-index: 200;
 	right: 0;
 }
 
-#subMenuBtn
+#subMenuBtn li li {
+	background: black;
+	display: block;
+	float: none;
+	text-align: center;
+	line-height: 50px;
+}
 
-#subMenuBtn .subMenu:hover ul li a:hover{
+#subMenuBtn .subMenu ul li:hover{
 	background: #999999;
-	color: red;
 	display: block;
 }
 
+/* 메뉴 창 */
 #menu {
   position: sticky;
   top: 0;
@@ -130,7 +134,7 @@ ol, ul {
   border-left: 1px solid #333333;
 	padding-left: 20px;
 	padding-right: 20px;
-	font-family: 'Do Hyeon', sans-serif;
+	font-family: 'Do Hyeon';
 	font-weight: 100;
 	font-size: 20px;
   color: white;
@@ -144,16 +148,14 @@ ol, ul {
   color: #9999FF;
 }
 
+/* 소개 화면 */
 #banner {
-	background-image: url(../img/headImg.jpg);
-  display: flex;
+	display: flex;
+	height: 100vh;
   align-items: center;
   justify-content: center;
-	height: 100vh;
-}
-
-#banner a {
-  display: block;
+	position: relative;
+	background-image: url(../img/headImg.jpg);
 }
 
 #banner .title {
@@ -164,11 +166,13 @@ ol, ul {
 }
 
 #body {
+	color: white;
 	padding: 0;
 	margin: 0;
 }
 
 #body .elements .element {
+	box-shadow : rgba(0,0,0,0.3) 0 0 0 9999px, rgba(0,0,0,0.5) 2px 2px 3px 3px;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -188,7 +192,6 @@ ol, ul {
 	line-height: 1.5;
 	padding-right: 60px;
 	padding-left: 60px;
-	color:
 }
 
 @media screen and (max-width: 804px) {
