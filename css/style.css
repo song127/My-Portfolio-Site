@@ -63,16 +63,42 @@ ol, ul {
 	position: fixed;
   z-index: 100;
   padding: 5px;
+	cursor: pointer;
 }
 
 #subMenuBtn .subMenu {
+	float: right;
 	font-family: 'Black Han Sans';
+	font-size: 1.5rem;
   background: #000000;
 	color: white;
-  border-radius: 5px;
   margin-top: 5px;
-  padding: 10px;
-  cursor: pointer;
+  padding: 6px;
+	width: 33px;
+}
+
+#subMenuBtn .subMenu:hover ul{
+	display: block;
+}
+
+#subMenuBtn li ul{
+	background: black;
+	display:none;
+	height:auto;
+	margin: 5px;
+	border:0px;
+	position:absolute;
+	width:200px;
+	z-index:200;
+	right: 0;
+}
+
+#subMenuBtn
+
+#subMenuBtn .subMenu:hover ul li a:hover{
+	background: #999999;
+	color: red;
+	display: block;
 }
 
 #menu {
@@ -143,7 +169,6 @@ ol, ul {
 }
 
 #body .elements .element {
-	color: white;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -151,6 +176,19 @@ ol, ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+#body .elements .element h2 {
+	color: white;
+	font-size: 3rem;
+	padding: 30px;
+}
+
+#body .elements .element p {
+	line-height: 1.5;
+	padding-right: 60px;
+	padding-left: 60px;
+	color:
 }
 
 @media screen and (max-width: 804px) {

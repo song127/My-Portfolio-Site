@@ -21,23 +21,27 @@
       </ul>
     </div>
 
-    <!-- 이동 스크롤 메뉴 버튼 -->
     <div id="subMenuBtn">
       <ul>
-        <li class="subMenu" onclick="goHere(this)"><<</li>
+        <li class="subMenu"><a onclick="">➕</a>
+          <ul>
+            <li><a onclick="goHere(1)">자기소개</a></li>
+            <li><a onclick="goHere(2)">프로젝트</a></li>
+            <li><a onclick="goHere(3)">수상 경력</a></li>
+            <li><a onclick="goHere(4)">참고 사이트</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
 
     <!--  상단 고정 메뉴  -->
     <div id="menu">
-      <div class="menu_items">
-        <ul>
-          <li><a class="items" onclick="goHere(1)">자기소개</a></li>
-          <li><a class="items" onclick="goHere(2)">프로젝트</a></li>
-          <li><a class="items" onclick="goHere(3)">수상 경력</a></li>
-          <li><a class="items" onclick="goHere(4)">참고 사이트</a></li>
-        </ul>
-      </div>
+      <ul class="menu_items">
+        <li><a class="items" onclick="goHere(1)">자기소개</a></li>
+        <li><a class="items" onclick="goHere(2)">프로젝트</a></li>
+        <li><a class="items" onclick="goHere(3)">수상 경력</a></li>
+        <li><a class="items" onclick="goHere(4)">참고 사이트</a></li>
+      </ul>
     </div>
 
 
