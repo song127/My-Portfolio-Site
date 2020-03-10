@@ -26,6 +26,9 @@ time, mark, audio, video {
 a:-webkit-any-link {
 	text-decoration: none;
 }
+a:visited { 
+	text-decoration: none;
+}
 
 /* 라인 길이 설정 <표준은 1.2 임>*/
 body {
