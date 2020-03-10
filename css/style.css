@@ -178,7 +178,7 @@ ol, ul {
 
 #banner .title {
 	font-family: 'Gaegu';
-	font-size: 12rem;
+	font-size: 14rem;
   position: relative;
   color: #FFFFFF;
 }
@@ -213,27 +213,6 @@ ol, ul {
 }
 
 @media (max-width: 804px) {
-
-	#menu {
-		display: none;
-	}
-
-	#subMenu {
-		display: block;
-	}
-
-	#home ul .goHome {
-	  background: white;
-		color: black;
-	}
-
-	#banner .title {
-		font-size: 7rem;
-	}
-
-}
-
-@media screen and (min-width: 768px) {
 
 	#menu {
 		display: none;
