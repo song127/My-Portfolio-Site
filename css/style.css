@@ -57,7 +57,7 @@ ol, ul {
 }
 
 /* 메뉴를 여는 버튼 (크기 작아질 시에만) */
-#subMenuBtn {
+#subMenu {
 	display: none;
 	right: 5px;
 	position: fixed;
@@ -66,7 +66,7 @@ ol, ul {
 	cursor: pointer;
 }
 
-#subMenuBtn .subMenu {
+#subMenu .subMenuBtn {
 	float: right;
 	font-family: 'Do Hyeon';
 	font-size: 1.5rem;
@@ -77,11 +77,20 @@ ol, ul {
 	width: 33px;
 }
 
-#subMenuBtn .subMenu:hover ul{
+#subMenu .subMenuBtn:hover ul {
 	display: block;
 }
 
-#subMenuBtn li ul{
+#subMenu .subMenuBtn:hover .subMenuBtnImg {
+	display: none;
+}
+
+#subMenu .subMenuBtn:hover {
+	margin: 0;
+	padding: 0;
+}
+
+#subMenu li ul{
 	background: black;
 	display: none;
 	margin: 5px;
@@ -91,7 +100,7 @@ ol, ul {
 	right: 0;
 }
 
-#subMenuBtn li li {
+#subMenu li li {
 	background: black;
 	display: block;
 	float: none;
@@ -99,7 +108,7 @@ ol, ul {
 	line-height: 50px;
 }
 
-#subMenuBtn .subMenu ul li:hover{
+#subMenu .subMenuBtn ul li:hover{
 	background: #999999;
 	display: block;
 }
@@ -200,7 +209,7 @@ ol, ul {
 		display: none;
 	}
 
-	#subMenuBtn {
+	#subMenu {
 		display: block;
 	}
 
