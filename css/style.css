@@ -26,7 +26,12 @@ time, mark, audio, video {
 a:-webkit-any-link {
 	text-decoration: none;
 }
-a:visited { 
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
 	text-decoration: none;
 }
 
