@@ -155,7 +155,7 @@ ol, ul {
   align-items: center;
   justify-content: center;
 	position: relative;
-	background-image: url(../img/headImg.jpg);
+	background-image: url(../img/headImg.jpg); /* 이미지 출처 : https://www.pixiv.net/artworks/79712396 */
 }
 
 #banner .title {
