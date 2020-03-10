@@ -178,6 +178,8 @@ ol, ul {
 }
 
 #banner .title {
+	padding-top: 200px;
+	padding-bottom: 200px;
 	font-family: 'Gaegu';
 	font-size: 14rem;
   position: relative;
