@@ -155,6 +155,7 @@ ol, ul {
 	font-weight: 100;
 	font-size: 20px;
   color: white;
+	cursor: pointer;
 }
 
 #menu .menu_items li:first-child .items {
@@ -168,7 +169,7 @@ ol, ul {
 /* 소개 화면 */
 #banner {
 	display: flex;
-	height: 100vh;
+	height: 70vh;
   align-items: center;
   justify-content: center;
 	position: relative;
@@ -212,7 +213,7 @@ ol, ul {
 	padding-left: 60px;
 }
 
-@media (max-width: 804px) {
+@media screen and (max-width: 804px) {
 
 	#menu {
 		display: none;
@@ -222,9 +223,13 @@ ol, ul {
 		display: block;
 	}
 
-	#home ul .goHome {
-	  background: white;
-		color: black;
+	#homeBtn .goHome {
+	  padding: 15px;
+	  font-size: 1.5rem;
+	}
+
+	#subMenu .subMenuBtn {
+		padding: 15px;
 	}
 
 	#banner .title {
