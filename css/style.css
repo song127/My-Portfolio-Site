@@ -169,7 +169,7 @@ ol, ul {
 /* 소개 화면 */
 #banner {
 	display: flex;
-	height: 100vh;
+	height: 100%;
   align-items: center;
   justify-content: center;
 	position: relative;
