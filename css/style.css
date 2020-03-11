@@ -51,7 +51,8 @@ ol, ul {
 #homeBtn {
   position: fixed;
   z-index: 100;
-  padding: 5px;
+  padding-top : 5px;
+	padding-left: 80px;
 }
 
 #homeBtn .goHome {
@@ -169,21 +170,42 @@ ol, ul {
 /* 소개 화면 */
 #banner {
 	display: flex;
-	height: 100%;
-  align-items: center;
+	color: white;
+	height: 100vh;
+	align-items: center;
   justify-content: center;
 	position: relative;
-	background-image: url(../img/headImg.jpg); /* 이미지 출처 : https://www.pixiv.net/artworks/79712396 */
+	background-image: url(../img/pixa_1776996_monitor.png); /* 이미지 출처 : https://www.pixiv.net/artworks/79712396 */
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-#banner .title {
-	padding-top: 200px;
-	padding-bottom: 200px;
+#banner .intro {
+	padding-bottom: 22%;
+	position: absolute;
+	align-items: center;
+  justify-content: center;
+	line-height: 2;
+	text-align: center;
+}
+
+#banner .intro .title {
 	font-family: 'Gaegu';
-	font-size: 14rem;
-  position: relative;
+	font-size: 130px;
   color: #FFFFFF;
+}
+
+#banner .intro .bar {
+	width: 52px;
+	border: none;
+	border-top: 2px solid #c6aa94;
+}
+
+#banner .intro .subTitle {
+	font-family: 'Sunflower';
+	font-weight: lighter;
+	font-size: 20px;
 }
 
 #body {
@@ -215,6 +237,10 @@ ol, ul {
 	padding-left: 60px;
 }
 
+@media (min-width: ) {
+
+}
+
 @media (max-width: 804px) {
 
 	#menu {
@@ -223,6 +249,10 @@ ol, ul {
 
 	#subMenu {
 		display: block;
+	}
+
+	#homeBtn {
+		padding: 5px;
 	}
 
 	#homeBtn .goHome {
@@ -234,8 +264,12 @@ ol, ul {
 		padding: 15px;
 	}
 
-	#banner .title {
-		font-size: 7rem;
+	#banner .intro {
+		padding-bottom: 120px;
+	}
+
+	#banner .intro .title {
+		font-size: 100px;
 	}
 
 }
